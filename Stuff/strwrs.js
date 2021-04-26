@@ -1,5 +1,5 @@
-import { planets } from '../starwars/planets'
-import { species } from '../starwars/species'
+import { planets } from 'planets'
+import { species } from 'species'
 
 let planetsList = document.querySelector("#planetsList")
 
