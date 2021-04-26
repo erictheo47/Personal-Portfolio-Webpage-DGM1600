@@ -195,6 +195,12 @@ main{
     min-height:100vh;
 }
 
+#welcome-section img{
+    width:100%;
+    margin-bottom:1em;
+    border-radius:1em;
+}
+
 blockquote{
     padding:0 1em;
     letter-spacing:1px;
@@ -255,6 +261,11 @@ p{
     width:100%;
     border:1px solid #fff;
     border-radius:1em;
+}
+
+#addCard img{
+    border:0px solid #fff;
+    opacity:.75;
 }
 
 figcaption{
