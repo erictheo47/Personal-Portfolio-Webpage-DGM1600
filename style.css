@@ -219,12 +219,12 @@ p{
     text-decoration:none;
 }
 
-#projects{
+.projects{
     padding: 5em 0 0 0;
-    min-height:100vh;
+    min-height: 100vh;
 }
 
-#projects-flex{
+.projects-flex{
     display:flex;
     flex-flow:row wrap;
     justify-content:space-between;
@@ -234,7 +234,7 @@ p{
 
 .project-tile{
     width:48%;
-
+    min-height:360px;
     background-color:#fff1;
     padding:1.8em;
     margin:0 0 1.5em 0;
