@@ -5,6 +5,7 @@ let planetsList = document.querySelector("#planetsList")
 
 for (let i = 0; i < planets.length - 43; i++) {
     let planet = planets[i].name
+    let weather = planets[i].climate
 
     let newTile = document.createElement("a")
     newTile.classList.add("project-tile")
@@ -18,9 +19,13 @@ for (let i = 0; i < planets.length - 43; i++) {
 
     let newCaption = document.createElement("figcaption")
     newCaption.textContent = planet
+
+    let anotherCaption = document.createElement("figcaption")
+    anotherCaption.textContent = "Climate: " + weather
     
     newFigure.appendChild(newImg)
     newFigure.appendChild(newCaption)
+    newFigure.appendChild(anotherCaption)
     newTile.appendChild(newFigure)
     planetsList.appendChild(newTile)
 }
@@ -117,6 +122,7 @@ for (let i = 36; i < species.length; i++) {
 
 for (let i = 0; i < species.length - 4; i++) {
     let race = species[i].name
+    let type = species[i].classification
 
     let newTile = document.createElement("a")
     newTile.classList.add("project-tile")
@@ -130,9 +136,13 @@ for (let i = 0; i < species.length - 4; i++) {
 
     let newCaption = document.createElement("figcaption")
     newCaption.textContent = race
+
+    let anotherCaption = document.createElement("figcaption")
+    anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
     newFigure.appendChild(newCaption)
+    newFigure.appendChild(anotherCaption)
     newTile.appendChild(newFigure)
     speciesList.appendChild(newTile)
 }
