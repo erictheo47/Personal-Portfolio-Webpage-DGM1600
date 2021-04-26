@@ -34,6 +34,7 @@ let speciesList = document.querySelector("#speciesList")
 
 for (let i = 35; i < species.length - 1; i++) {
     let race = species[i].name
+    let type = species[i].classification
 
     let newTile = document.createElement("a")
     newTile.classList.add("project-tile")
@@ -47,15 +48,20 @@ for (let i = 35; i < species.length - 1; i++) {
 
     let newCaption = document.createElement("figcaption")
     newCaption.textContent = race
+
+    let anotherCaption = document.createElement("figcaption")
+    anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
     newFigure.appendChild(newCaption)
+    newFigure.appendChild(anotherCaption)
     newTile.appendChild(newFigure)
     speciesList.appendChild(newTile)
 }
 
 for (let i = 34; i < species.length - 2; i++) {
     let race = species[i].name
+    let type = species[i].classification
 
     let newTile = document.createElement("a")
     newTile.classList.add("project-tile")
@@ -69,15 +75,20 @@ for (let i = 34; i < species.length - 2; i++) {
 
     let newCaption = document.createElement("figcaption")
     newCaption.textContent = race
+
+    let anotherCaption = document.createElement("figcaption")
+    anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
     newFigure.appendChild(newCaption)
+    newFigure.appendChild(anotherCaption)
     newTile.appendChild(newFigure)
     speciesList.appendChild(newTile)
 }
 
 for (let i = 33; i < species.length - 3; i++) {
     let race = species[i].name
+    let type = species[i].classification
 
     let newTile = document.createElement("a")
     newTile.classList.add("project-tile")
@@ -91,15 +102,20 @@ for (let i = 33; i < species.length - 3; i++) {
 
     let newCaption = document.createElement("figcaption")
     newCaption.textContent = race
+
+    let anotherCaption = document.createElement("figcaption")
+    anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
     newFigure.appendChild(newCaption)
+    newFigure.appendChild(anotherCaption)
     newTile.appendChild(newFigure)
     speciesList.appendChild(newTile)
 }
 
 for (let i = 36; i < species.length; i++) {
     let race = species[i].name
+    let type = species[i].classification
 
     let newTile = document.createElement("a")
     newTile.classList.add("project-tile")
@@ -113,9 +129,13 @@ for (let i = 36; i < species.length; i++) {
 
     let newCaption = document.createElement("figcaption")
     newCaption.textContent = race
+
+    let anotherCaption = document.createElement("figcaption")
+    anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
     newFigure.appendChild(newCaption)
+    newFigure.appendChild(anotherCaption)
     newTile.appendChild(newFigure)
     speciesList.appendChild(newTile)
 }
