@@ -1,5 +1,5 @@
-import { planets } from '../stuff/planets.js'
-import { species } from '../stuff/species.js'
+import { planets } from '../starWars/planets.js'
+import { species } from '../starWars/species.js'
 
 let planetsList = document.querySelector("#planetsList")
 
@@ -18,9 +18,11 @@ for (let i = 0; i < planets.length - 43; i++) {
     newImg.src = `https://starwars-visualguide.com/assets/img/planets/${i + 2}.jpg`
 
     let newCaption = document.createElement("figcaption")
+    newCaption.classList.add("primary-info")
     newCaption.textContent = planet
 
     let anotherCaption = document.createElement("figcaption")
+    anotherCaption.classList.add("secondary-info")
     anotherCaption.textContent = "Climate: " + weather
     
     newFigure.appendChild(newImg)
@@ -47,9 +49,11 @@ for (let i = 35; i < species.length - 1; i++) {
     newImg.src = 'https://starwars-visualguide.com/assets/img/species/1.jpg'
 
     let newCaption = document.createElement("figcaption")
+    newCaption.classList.add("primary-info")
     newCaption.textContent = race
 
     let anotherCaption = document.createElement("figcaption")
+    anotherCaption.classList.add("secondary-info")
     anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
@@ -74,9 +78,11 @@ for (let i = 34; i < species.length - 2; i++) {
     newImg.src = 'https://starwars-visualguide.com/assets/img/species/2.jpg'
 
     let newCaption = document.createElement("figcaption")
+    newCaption.classList.add("primary-info")
     newCaption.textContent = race
 
     let anotherCaption = document.createElement("figcaption")
+    anotherCaption.classList.add("secondary-info")
     anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
@@ -101,9 +107,11 @@ for (let i = 33; i < species.length - 3; i++) {
     newImg.src = 'https://starwars-visualguide.com/assets/img/species/3.jpg'
 
     let newCaption = document.createElement("figcaption")
+    newCaption.classList.add("primary-info")
     newCaption.textContent = race
 
     let anotherCaption = document.createElement("figcaption")
+    anotherCaption.classList.add("secondary-info")
     anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
@@ -128,9 +136,11 @@ for (let i = 36; i < species.length; i++) {
     newImg.src = 'https://starwars-visualguide.com/assets/img/species/4.jpg'
 
     let newCaption = document.createElement("figcaption")
+    newCaption.classList.add("primary-info")
     newCaption.textContent = race
 
     let anotherCaption = document.createElement("figcaption")
+    anotherCaption.classList.add("secondary-info")
     anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
@@ -155,9 +165,11 @@ for (let i = 0; i < species.length - 4; i++) {
     newImg.src = `https://starwars-visualguide.com/assets/img/species/${i + 5}.jpg`
 
     let newCaption = document.createElement("figcaption")
+    newCaption.classList.add("primary-info")
     newCaption.textContent = race
 
     let anotherCaption = document.createElement("figcaption")
+    anotherCaption.classList.add("secondary-info")
     anotherCaption.textContent = "Classification: " + type
     
     newFigure.appendChild(newImg)
