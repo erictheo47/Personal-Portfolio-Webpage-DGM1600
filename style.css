@@ -128,8 +128,6 @@ figcaption{
 }
 /*-------------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 768px) {
-
 header{
     margin-top:-62px;
     height:100vh;
@@ -190,6 +188,13 @@ main{
     color:#fff;
 }
 
+main.poke{
+    max-width:1000px;
+    margin:auto;
+    padding:0 100px;
+    color:#fff;
+}
+
 #welcome-section{
     padding:5em 0 0 0;
     min-height:100vh;
@@ -238,6 +243,14 @@ p{
     margin:1em 0 0 0;
 }
 
+.pokemon-flex{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin:1em 0 0 0;
+}
+
 .project-tile{
     width:48%;
     min-height:360px;
@@ -245,6 +258,16 @@ p{
     padding:1.8em;
     margin:0 0 1.5em 0;
     border-radius:1.8em;
+    transition:box-shadow .25s, background-color .25s, transform .25s;
+}
+
+.pokemon-flex .project-tile{
+    width:31%;
+    min-height:360px;
+    background-color:#fff1;
+    padding:1.8em;
+    margin:0 0 1.5em 0;
+    border-radius:1em;
     transition:box-shadow .25s, background-color .25s, transform .25s;
 }
 
@@ -268,8 +291,13 @@ p{
     opacity:.75;
 }
 
+a{
+    text-decoration: none;
+}
+
 figcaption{
     color:#fff;
+    text-decoration: none;
 }
 
 .primary-info{
@@ -278,6 +306,4 @@ figcaption{
 
 .secondary-info{
     color:#fffb;
-}
-
 }
