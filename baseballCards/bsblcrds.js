@@ -1,4 +1,5 @@
 //Hello World!
+
 const pokemonFlex = document.querySelector(".pokemon-flex")
 
 async function getAPIData(url) {
@@ -12,9 +13,11 @@ async function getAPIData(url) {
 }
 
 getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=25`).then(
-    (data) => {
+    async (data) => {
         for (const singlePokemon of data.results) {
-            populatePokeCard(singlePokemon)
+            await getAPIData(singlePokemon.url).then(
+                (pokeData) => populatePokeCard(pokeData)
+            )
         }
     }
 )
@@ -25,6 +28,9 @@ function populatePokeCard(singlePokemon) {
 
     let pokeCard = document.createElement("div")
     pokeCard.className = "card"
+    pokeCard.addEventListener('click', () => {
+        pokeCard.classList.toggle('is-flipped')
+    })
 
     pokeCard.appendChild(populateCardFront(singlePokemon))
     pokeCard.appendChild(populateCardBack(singlePokemon))
@@ -43,7 +49,7 @@ function populateCardFront(pokemon) {
 
     let frontImage = document.createElement("img")
     frontImage.className = "frontImage"
-    frontImage.src = `images/001.png`
+    frontImage.src = `images/00${pokemon.id}.png`
 
     pokeFront.appendChild(frontImage)
     pokeFront.appendChild(frontLabel)

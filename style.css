@@ -303,10 +303,10 @@ figcaption{
     min-width:180px;
     min-height:260px;
     margin:8px;
-    perspective: 600px;
+    perspective:800px;
 }
 
-.pokeCard{
+.card{
     width: 100%;
     height: 100%;
     transition: transform 1s;
@@ -322,7 +322,7 @@ figcaption{
 .card__face{
     position:absolute;
     width:100%;
-    height:100%;
+    height:260px;
     backface-visibility:hidden;
   }
 
@@ -351,8 +351,10 @@ figcaption{
 }
 
 .card__face--back{
+    padding:8px;
+    width:100%;
+    height:260px;
     border-radius:1em;
-    border:1em solid #fff;
     background:linear-gradient(30deg, #014, #03a, #05a, #0bb);
     transform:rotateY(180deg);
-  }
+}
