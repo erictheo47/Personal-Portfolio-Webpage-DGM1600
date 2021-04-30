@@ -1,5 +1,8 @@
+/*I wanted the pages to scroll smoothly when same-page
+links were clicked, to be less jarring for the user.*/
 html{scroll-behavior:smooth ;}
 
+/*I always reset box-sizing, margins and padding. ALWAYS.*/
 *{
     box-sizing:border-box;
     margin:0;
@@ -7,6 +10,7 @@ html{scroll-behavior:smooth ;}
     font-family:"Avenir Next", sans-serif;
 }
 
+/*I like the look of pages that have a fullscreen header.*/
 header{
     margin-top:-62px;
     height:100vh;
@@ -22,6 +26,8 @@ header{
     font-size:7vw;
 }
 
+/*I like adding transition effects when links are hovered
+in the nav bar. Makes the page seem fancy.*/
 #navbar{
     position:sticky;
     top:0;
@@ -56,6 +62,8 @@ header{
     box-shadow:#0ff 0px -5px 5px -5px inset;
 }
 
+/*This is how I learned to add color to the main body of a page.
+Wrap it with a div called wrapper.*/
 #wrapper{
     background-color:#111;
 }
@@ -67,6 +75,7 @@ main{
     color:#fff;
 }
 
+/*This sets a specific width for the pokemon page.*/
 main.poke{
     max-width:1000px;
     margin:auto;
@@ -76,6 +85,7 @@ main.poke{
 
 #welcome-section{
     padding:5em 0 0 0;
+    /*Having the min-height set to 100vh makes the section fill the user's screen.*/
     min-height:100vh;
 }
 
@@ -101,6 +111,8 @@ p{
     font-size:1em;
 }
 
+/*Styling for the button that takes you to the next section.
+I really like how I made that button look.*/
 #next-button{
     color:#fff;
     background-color:#fff1;
@@ -114,6 +126,8 @@ p{
     min-height: 100vh;
 }
 
+/*When I was making the index.html, I purposely added "flex" to the class
+where I knew that I needed to set the display to flex.*/
 .projects-flex{
     display:flex;
     flex-flow:row wrap;
@@ -122,6 +136,7 @@ p{
     margin:1em 0 0 0;
 }
 
+/*pokemon page gets its own class because it has different child elements.*/
 .pokemon-flex{
     display:flex;
     flex-flow:row wrap;
@@ -155,6 +170,8 @@ p{
     border-radius:1em;
 }
 
+/*default link colors weren't showing up. i like using 3 value
+hex numbers. (or 4 for opacity).*/
 a{
     color:#0aa;
     text-decoration: none;
@@ -194,6 +211,7 @@ figcaption{
     position: relative;
 }
 
+/*I wanted the pokemon cards to do something when you hovered over them.*/
 .card:hover{
     transform:scale(1.025)
 }
@@ -253,6 +271,7 @@ figcaption{
     margin-bottom:0px;
 }
 
+/*These are the specific rules for the card that lets you add pokemon.*/
 #newCard{
     width:23%;
     min-width:180px;
