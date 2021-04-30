@@ -1,3 +1,4 @@
+//Export was already here, I just had to import it into my own file.
 export const species = [
     {
         "name": "Hutt",
